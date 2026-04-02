@@ -1,0 +1,21 @@
+App {
+  text-align: center;
+  padding: 2rem;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem; /* == 16px */
+  width: 150px;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+}
+
+h2 {
+  margin-top: 1rem;
+}

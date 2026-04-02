@@ -1,0 +1,52 @@
+.Editor {
+  /* 1. 레이아웃 방식을 flex로 설정 */
+  display: flex;
+  /* 2. [가장 중요] 자식 요소들을 세로 방향으로 정렬 */
+  flex-direction: column;
+  /* 3. 섹션 사이의 간격을 넉넉히 벌려줌 */
+  gap: 20px;
+  /* (선택) 에디터의 최대 너비를 제한해서 보기 좋게 만듦 */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Editor > section {
+  margin-bottom: 40px;
+}
+
+.Editor > section > h4 {
+  font-size: 20px;
+}
+
+.Editor > section > input,
+textarea {
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.Editor .emotion_section .emotion_list_wrapper {
+  display: flex;
+  gap: 2%;
+  justify-content: space-around;
+}
+
+.Editor > section > textarea {
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  box-sizing: border-box;
+  /* 이걸 하면 여백에 딱 맞게 들어갈 수 있습니다  */
+}
+
+.Editor .button_section {
+  display: flex;
+  justify-content: space-between;
+  /* space around 는 각각의 여백에 맞게 돌아가면서 그 여백에 따라서 
+  배치를 하기에 양 사이드에 놓지 않음 
+  양 사이드에 넣고 싶을 경우 between 을 하면 됨 , 
+  간격에 맞게 쓰고 싶다면 around 각각띄우고 싶다면 between 사용하면 됨.  */
+  gap: 10px;
+}

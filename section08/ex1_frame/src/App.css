@@ -1,0 +1,46 @@
+.App {
+  width: 500px;
+  margin: 0 auto; /*화면 가운데 배치 */
+
+  display: flex;
+  flex-direction: column; /*자식 테그를 세로(열) 기준 배치 */
+  gap: 10px;
+}
+
+@font-face {
+  font-family: "NostalgicPoliceFairness";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/Griun_PolFairness-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KyoboHandwriting2019";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "NostalgicPoliceFairness";
+}
+
+body {
+  font-family: "NostalgicPoliceFairness";
+}
+
+.Header > h3 {
+  color: cadetblue;
+}
+
+.Header > h1 {
+  color: green;
+  font-family: "KyoboHandwriting2019";
+}
+
+.List {
+  display: flex;
+  color: dimgrey;
+}

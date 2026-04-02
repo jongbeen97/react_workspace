@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.20/dayjs.min.js"></script>
+  </head>
+  <body>
+    <div class="dday-card">
+      <div class="dday-card_title">종강까지 남은 시간</div>
+      <div id="dday-count" class="dday-card_count">D-00</div>
+      <div id="display-date" class="dday-card_date">0000년 00월 00일</div>
+    </div>
+  </body>
+  <script>
+    // 목표 날짜 지정
+    const targetDate = "2026-05-13";
+    const now = dayjs(); // 현재 시간(Day.js 객체 )
+    const target = dayjs(targetDate); // 목표 날짜 ( Day.js 객체 )
+
+    // 시간 차이 계산
+    // diff() : 날짜의 단위를 기준으로 차이를 구하는 기능
+    const diffDays = target.diff(now, "day");
+
+    // 화면 표시
+    const displayDay = document.getElementById("dday-count");
+    const displayDate = document.getElementById("display-date");
+
+    //D-day 로직 분기
+    if (diffDays > 0) {
+      displayDay.innerText = `D+${diffDays}`;
+    } else if (diffDays < 0) {
+      displayDay.innerText = `D-${Math.abs(diffDays)}`;
+    } else {
+      displayDay.innerText = "D-Day";
+    }
+
+    displyaDate.innerText = target.format("YYYY년 MM월 DD일");
+  </script>
+</html>

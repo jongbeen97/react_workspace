@@ -1,0 +1,40 @@
+@font-face {
+  /* 글꼴 이름은 마음대로 바꿔도 상관 없지만 
+  내가 만든 글꼴은 아니다 보니 기존에 있던 글꼴을 사용하는 것이 
+  베스트 입니다.  */
+  font-family: "AppleSDGothicNeoM";
+  /* 퍼블릭에 저장된 폰트 파일 연결  
+   -> 퍼블릭 폴더에 접근하는 경우 /만 입력하면 된다.
+  */
+  src: url("/AppleSDGothicNeoM.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+}
+
+#root {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  min-height: 100vh;
+  height: 100%;
+  box-shadow: rgba(100, 100, 100, 0.2) 0px 0px 29px 0px;
+}
+
+/* 
+*{} 사용시 <html>,<head>,<meta>,<title>, <style>,<script> 같은 태그까지 포함한 모든 요소에 적용
+ 이것은 사용자 눈에 보이는 태그는 아니다 , 이들은 폰트를 적용할 이유 없음 . 
+ 그런데 쓸데 없이 적용을 한다... 
+ 하지만 굳이 불필요한 태그에 기능을 적용하면 성능에도 약간의 영향이 발생한다.
+ 불필요한 요소를 제외하고 화면에 표시되는 요소에만 적용하는 것이 불필요한 오버헤드를 줄일 수 있는 실무적인 방식이다. 
+그래서 body *{} 하면 된다
+ */
+body * {
+  font-family: "AppleSDGothicNeoM";
+}

@@ -1,0 +1,15 @@
+{
+  "name": "section03_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "_comment": "type : module설정시 import/export만 사용가능(ES모듈 시스템 사용)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "dependencies": {}
+}
