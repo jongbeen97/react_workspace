@@ -34,7 +34,6 @@ function App() {
   // 재미나이 서비스를 현재 프로젝트에 적용
   //  1. 재미나이 AI 사용을 위해 key 값을 통해 AI 객체 만들기 생성
   const genAI = new GoogleGenerativeAI(
-    "AIzaSyAavYo-PfGDglkScBvbgwQvkkpUCaSa96E",
   );
 
   // Ai 에게 질문하기 기능 구현을 하기 위해
